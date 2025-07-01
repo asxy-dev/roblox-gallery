@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neo Avenger | Roblox Creations</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div class="particles" id="particles-js"></div>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <div class="logo-icon">
+            <i class="fas fa-cube"></i>
+          </div>
+          <span class="logo-text">Neo<span class="accent">Avenger</span></span>
+        </div>
+        <div class="nav-links">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <div class="dropdown">
+            <a href="#categories" class="nav-link"
+              >Categories <i class="fas fa-chevron-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#arenas"><i class="fas fa-shield-alt"></i>Arenas</a>
+              <a href="#simulator"
+                ><i class="fas fa-gamepad"></i>Simulator Maps</a
+              >
+              <a href="#mini-arena"
+                ><i class="fas fa-crosshairs"></i>Mini Arena</a
+              >
+              <a href="#sci-fi"
+                ><i class="fas fa-rocket"></i>Sci-Fi Buildings</a
+              >
+              <a href="#ping-pong"
+                ><i class="fas fa-table-tennis"></i>Ping Pong Lobby</a
+              >
+              <a href="#horror"><i class="fas fa-ghost"></i>Horror Hallway</a>
+              <a href="#oldish"><i class="fas fa-history"></i>Oldish Lobby</a>
+              <a href="#low-poly"
+                ><i class="fas fa-cubes"></i>Low Poly Assets</a
+              >
+            </div>
+          </div>
+          <a href="#about" class="nav-link">About</a>
+          <a
+            href="https://discord.gg/"
+            class="nav-link cta-link"
+            target="_blank"
+          >
+            <i class="fab fa-discord"></i>Discor
+          </a>
+        </div>
+        <div class="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-background">
+          <div class="gradient-orb orb-1"></div>
+          <div class="gradient-orb orb-2"></div>
+          <div class="gradient-orb orb-3"></div>
+        </div>
+
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <i class="fas fa-star"></i>
+              <span>Premium Roblox Builder</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="blue">Neo</span> <span class="white">Avenger</span>
+            </h1>
+            <p class="hero-description">
+              Crafting immersive worlds and stunning environments for the Roblox
+              universe.<br />
+              Every creation tells a story, every detail matters.
+            </p>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-number" data-count="50">0</div>
+                <div class="stat-label">Projects</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-count="8">0</div>
+                <div class="stat-label">Categories</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-count="1000">0</div>
+                <div class="stat-label">Hours</div>
+              </div>
+            </div>
+
+            <div class="hero-buttons">
+              <button class="btn btn-primary" id="exploreBtn">
+                <span class="btn-text">Explore Gallery</span>
+                <i class="fas fa-arrow-right btn-icon"></i>
+                <div class="btn-ripple"></div>
+              </button>
+              <button class="btn btn-secondary" id="contactBtn">
+                <span class="btn-text">Get in Touch</span>
+                <i class="fab fa-discord btn-icon"></i>
+                <div class="btn-ripple"></div>
+              </button>
+            </div>
+
+            <div class="hero-social">
+              <a href="#" class="social-link" data-tooltip="Discord">
+                <i class="fab fa-discord"></i>
+              </a>
+              <a href="#" class="social-link" data-tooltip="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link" data-tooltip="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-link" data-tooltip="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="floating-cards">
+              <div class="floating-card card-1" data-tilt>
+                <img src="arenas/1.png" alt="Arena Preview" />
+                <div class="card-overlay">
+                  <h3>Battle Arenas</h3>
+                  <p>Epic combat environments</p>
+                </div>
+              </div>
+              <div class="floating-card card-2" data-tilt>
+                <img src="sci-fi/1.png" alt="Sci-Fi Preview" />
+                <div class="card-overlay">
+                  <h3>Sci-Fi World</h3>
+                  <p>Futuristic landscapes</p>
+                </div>
+              </div>
+              <div class="floating-card card-3" data-tilt>
+                <img src="horror/1.png" alt="Horror Preview" />
+                <div class="card-overlay">
+                  <h3>Horror Realm</h3>
+                  <p>Spine-chilling atmospheres</p>
+                </div>
+              </div>
+              <div class="floating-card card-4" data-tilt>
+                <img src="ping-pong/1.png" alt="Ping Pong Preview" />
+                <div class="card-overlay">
+                  <h3>Social Spaces</h3>
+                  <p>Interactive experiences</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-3d-element">
+              <div class="rotating-cube">
+                <div class="cube-face front"></div>
+                <div class="cube-face back"></div>
+                <div class="cube-face right"></div>
+                <div class="cube-face left"></div>
+                <div class="cube-face top"></div>
+                <div class="cube-face bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <div class="scroll-text">Scroll to explore</div>
+          <div class="scroll-circle">
+            <div class="scroll-arrow">
+              <i class="fas fa-arrow-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-decoration">
+          <div class="deco-line line-1"></div>
+          <div class="deco-line line-2"></div>
+          <div class="deco-dot dot-1"></div>
+          <div class="deco-dot dot-2"></div>
+          <div class="deco-dot dot-3"></div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery">
+        <section id="arenas" class="category">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Arenas</h2>
+              <p class="section-description">
+                Battle-ready environments for competitive games
+              </p>
+            </div>
+            <div class="image-grid" id="arenas-grid">
+              <!-- Images will be loaded by JavaScript -->
+            </div>
+          </div>
+        </section>
+
+        <section id="simulator" class="category">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Simulator Maps + Lobby</h2>
+              <p class="section-description">
+                Perfect environments for simulator games
+              </p>
+            </div>
+            <div class="image-grid" id="simulator-grid">
+              <!-- Images will be loaded by JavaScript -->
+            </div>
+          </div>
+        </section>
+
+        <section id="mini-arena" class="category">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Mini Arena</h2>
+              <p class="section-description">
+                Compact battle spaces for quick matches
+              </p>
+            </div>
+            <div class="image-grid" id="mini-arena-grid">
+              <!-- Images will be loaded by JavaScript -->
+            </div>
+          </div>
+        </section>
+
+        <section id="sci-fi" class="category">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Sci-Fi Buildings</h2>
+              <p class="section-description">
+                Futuristic structures for your sci-fi games
+              </p>
+            </div>
+            <div class="image-grid" id="sci-fi-grid">
+              <!-- Images will be loaded by JavaScript -->
+            </div>
+          </div>
+        </section>
+
+        <section id="ping-pong" class="category">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Ping Pong Lobby</h2>
+              <p class="section-description">
+                Interactive spaces for social games
+              </p>
+            </div>
+            <div class="image-grid" id="ping-pong-grid">
+              <!-- Images will be loaded by JavaScript -->
+            </div>
+          </div>
+        </section>
+
+        <section id="horror" class="category">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Horror Hallway</h2>
+              <p class="section-description">
+                Spooky environments for horror experiences
+              </p>
+            </div>
+            <div class="image-grid" id="horror-grid">
+              <!-- Images will be loaded by JavaScript -->
+            </div>
+          </div>
+        </section>
+
+        <section id="oldish" class="category">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Oldish Lobby</h2>
+              <p class="section-description">
+                Classic designs with a nostalgic feel
+              </p>
+            </div>
+            <div class="image-grid" id="oldish-grid">
+              <!-- Images will be loaded by JavaScript -->
+            </div>
+          </div>
+        </section>
+
+        <section id="lightning" class="category">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Interior Work + Lightning</h2>
+              <p class="section-description">
+                A master piece of art.
+              </p>
+            </div>
+            <div class="image-grid" id="lightning-grid">
+              <!-- Images will be loaded by JavaScript -->
+            </div>
+          </div>
+        </section>
+
+        <section id="low-poly" class="category full-width">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Low Poly Assets</h2>
+              <p class="section-description">
+                Optimized assets for performance
+              </p>
+            </div>
+            <div class="image-grid single">
+              <div class="image-grid-item">
+                <img src="low-poly/1.png" alt="Low Poly Assets" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="about" class="support">
+        <div class="container">
+          <div class="support-content">
+            <h2>About Neo Avenger</h2>
+            <p>
+              High-quality Roblox creations designed to enhance your gaming
+              experience
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-image" />
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-left">
+            <div class="footer-logo">
+              <i class="fas fa-cube"></i>
+              <span>Neo Avenger</span>
+            </div>
+            <p>Premium Roblox environments and assets</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Categories</h4>
+              <a href="#arenas">Arenas</a>
+              <a href="#simulator">Simulator Maps</a>
+              <a href="#sci-fi">Sci-Fi Buildings</a>
+            </div>
+            <div class="footer-column">
+              <h4>More</h4>
+              <a href="#horror">Horror Hallway</a>
+              <a href="#oldish">Oldish Lobby</a>
+              <a href="#low-poly">Low Poly</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Neo Avenger. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
